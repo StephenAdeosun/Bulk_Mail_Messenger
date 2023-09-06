@@ -9,7 +9,7 @@ function getStarted() {
         READY TO START
       </h4>
       <div className="mb-28 ssm:text-[7px] md:m:w-[280px] md:w-full">
-        <h2 className="sm:text-base md:text-lg lg:text-2xl lg:text-4xl text-pri011 font-semibold py-5">
+        <h2 className="sm:text-base md:text-lg lg:text-4xl text-pri011 font-semibold py-5">
           Want to Get Started?
         </h2>
         <p className="sm:text-[6px] md:text-xl text-pri005 md:w-[416px] mx-auto">
