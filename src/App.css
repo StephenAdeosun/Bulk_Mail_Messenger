@@ -1,12 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .App {
   text-align: center;
+  overflow-x: hidden;
+}
+
+/* Hero Page CSS */
+
+:root {
+  --primary-color: rgba(67, 53, 226, 0.6);
+  --secondary-color: rgba(67, 53, 226, 1);
+  --neutral-color: white;
+  --dark-color: rgba(18, 18, 18, 1);
+}
+
+li a:hover {
+  color: var(--primary-color);
+}
+
+.sign-in {
+  background-color: var(--primary-color);
+  color: var(--neutral-color);
+}
+
+.sign-in:active,
+.sign-in:hover {
+  background-color: var(--secondary-color);
+  transition: all 0.1s ease-in-out;
+}
+
+.bulk-h1 {
+  color: var(--dark-color);
+}
+
+.bulk-span,
+.api-span {
+  color: var(--primary-color);
+}
+.messenger-span {
+  color: var(--secondary-color);
+}
+
+.trial-btn {
+  background-color: var(--primary-color);
+  color: var(--neutral-color);
+}
+
+.trial-btn:active,
+.trial-btn:hover {
+  background: transparent;
+  transition: all 0.1s ease-in-out;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.learn-btn {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.learn-btn:active,
+.learn-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--neutral-color);
+  border: 1px solid var(--primary-color);
+}
+
+@media screen and (max-width: 769px) {
+  section {
+    width: 100%;
+  }
 }

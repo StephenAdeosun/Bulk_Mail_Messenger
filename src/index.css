@@ -1,3 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@chakra-ui/react/dist/styles.css';
