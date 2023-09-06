@@ -1,85 +1,10 @@
 import dashboard from "../images/image 9.png";
-
-// const [showMore, setShowMore] = useState(false);
-
-// function NavBarClick() {
-//   setShowMore(!showMore);
-// }
+import Nav from "../components/nav.jsx";
 
 function HeroPage() {
-  // const navBarClick = () => {
-  //   const btn = document.querySelector("#menu-btn");
-  //   const nav = document.querySelector("#menu");
-  //   btn.classList.toggle("open");
-  //   nav.classList.toggle("flex");
-  //   nav.classList.toggle("hidden");
-  // };
-
   return (
     <section className="bg-section pb-24 flex flex-col justify-center items-center w-full relative">
-      <header className="p-7 flex items-center justify-between md:justify-around w-full ">
-        <button className="border-black border-2 text-lg px-3 py-1 font-semibold">
-          Logo
-        </button>
-
-        <div className="w-2/3 hidden md:block">
-          <nav className=" md:flex items-center justify-around ">
-            <ul className="flex gap-6 font-semibold text-lg">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Pricing</a>
-              </li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <a href="#">Templates</a>
-              </li>
-            </ul>
-
-            <button className="sign-in px-8 py-2.5 rounded-md ">Sign In</button>
-          </nav>
-        </div>
-
-        <button
-          // onClick={NavBarClick}
-          id="menu-btn"
-          className="block hamburger md:hidden focus:outline-none items-end"
-        >
-          <span className="hamburger-top"></span>
-          <span className="hamburger-middle"></span>
-          <span className="hamburger-bottom"></span>
-        </button>
-      </header>
-
-      <div class="md:hidden">
-        <div id="menu " className="hidden nav-menu">
-          <ul className="flex flex-col absolute gap-6 font-semibold text-lg">
-            <li className="hover:underline hover:decoration-solid hover:decoration-2 hover:underline-offset-4">
-              <a href="#">Home</a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                className="hover:underline decoration-solid decoration-2 decoration-black underline-offset-4"
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a href="#">Features</a>
-            </li>
-            <li>
-              <a href="#">Templates</a>
-            </li>
-          </ul>
-
-          <button className="sign-in px-8 py-2.5 rounded-md">Sign In</button>
-        </div>
-      </div>
+      <Nav />
 
       <div className="mt-24 w-5/6 flex flex-col justify-center items-center ">
         <div className="mb-20">
