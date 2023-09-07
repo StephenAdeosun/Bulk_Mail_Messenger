@@ -19,15 +19,14 @@
   --secondary-color: rgba(67, 53, 226, 1);
   --neutral-color: white;
   --dark-color: rgba(18, 18, 18, 1);
+  --gray-color: rgba(208, 208, 208, 0.4);
+  --dark-color2: rgba(30, 30, 30, 1);
 
-  /* GET STATRTED/PRICNG VARIABLES */
+  /* GET STARTED/PRICING VARIABLES */
   --pri001: hsl(245, 74%, 77%);
   --pri005: hsla(0, 0%, 23%, 1);
   --pri011: hsla(0, 0%, 1%), 1;
   --pri100: hsla(245, 75%, 55%, 0.6);
-  --dark-color2: rgba(30, 30, 30, 1);
-
-  --gray-color: rgba(208, 208, 208, 0.4);
 }
 
 li a:hover {
