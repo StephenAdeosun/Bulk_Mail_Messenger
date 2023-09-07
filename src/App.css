@@ -17,6 +17,9 @@
   --secondary-color: rgba(67, 53, 226, 1);
   --neutral-color: white;
   --dark-color: rgba(18, 18, 18, 1);
+  --dark-color2: rgba(30, 30, 30, 1);
+
+  --gray-color: rgba(208, 208, 208, 0.4);
 }
 
 li a:hover {
@@ -72,8 +75,39 @@ li a:hover {
   border: 1px solid var(--primary-color);
 }
 
+/* Testimonial Page Styling */
+
+.testimonial-section {
+  background: var(--dark-color);
+}
+
+.customer-h4,
+.customer-p,
+.profile-p {
+  color: var(--gray-color);
+}
+
+.customer-h3,
+.profile-h4 {
+  color: var(--neutral-color);
+}
+
+.profile-div {
+  background-color: var(--dark-color2);
+  box-shadow: 0 10px 15px -3px var(--gray-color);
+  /* background: var(--primary-color); */
+}
+
+.profile-h3 {
+  color: var(--neutral-color);
+}
+
 @media screen and (max-width: 769px) {
   section {
     width: 100%;
+  }
+
+  .testimonial-div {
+    width: 93%;
   }
 }
