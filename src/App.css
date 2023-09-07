@@ -19,8 +19,10 @@
   --secondary-color: rgba(67, 53, 226, 1);
   --neutral-color: white;
   --dark-color: rgba(18, 18, 18, 1);
+  --gray-color: rgba(208, 208, 208, 0.4);
+  --dark-color2: rgba(30, 30, 30, 1);
 
-  /* GET STATRTED/PRICNG VARIABLES */
+  /* GET STARTED/PRICING VARIABLES */
   --pri001: hsl(245, 74%, 77%);
   --pri005: hsla(0, 0%, 23%, 1);
   --pri011: hsla(0, 0%, 1%), 1;
@@ -80,51 +82,35 @@ li a:hover {
   border: 1px solid var(--primary-color);
 }
 
-@media screen and (max-width: 769px) {
-  section {
-    width: 100%;
-  }
+/* Testimonial Page Styling */
 
-  .pricing-plan{
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
+.testimonial-section {
+  background: var(--dark-color);
 }
 
-/* GET STARTED AND PRICING */
-
-.pri005{
-  color: var(--pri005);
+.customer-h4,
+.customer-p,
+.profile-p {
+  color: var(--gray-color);
 }
 
-.pri100 {
-  color: var(--pri100);
-}
-
-.bg-pri100{
-  background-color: var(--pri100);
-}
-
-.white{
+.customer-h3,
+.profile-h4 {
   color: var(--neutral-color);
 }
 
-.laptop {
-  width: 142.981px;
-  height: 142.981px;
+.profile-div {
+  background-color: var(--dark-color2);
+  box-shadow: 0 10px 15px -3px var(--gray-color);
+  /* background: var(--primary-color); */
 }
 
-.pricing-plan{
-  border: 1px solid var(--pri001);
+.profile-h3 {
+  color: var(--neutral-color);
 }
 
-.pricing-plan > div h2{
-  font-size: 7px;
-}
-@media screen and (min-width: 768px) {
-  .laptop {
-    width: 486px;
-    height: 625px;
+@media screen and (max-width: 769px) {
+  section {
+    width: 100%;
   }
 }

@@ -5,6 +5,7 @@ import GetStarted from "./Pages/getStarted";
 import Pricing from "./Pages/pricing";
 import Footer from "./Pages/footer";
 import "./App.css";
+import TestimonialPage from "./Pages/testimonialPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Section2 />
       <GetStarted />
       <Pricing />
+      <TestimonialPage />
       <Footer />
     </div>
   );

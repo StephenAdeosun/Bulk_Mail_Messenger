@@ -34,7 +34,7 @@ function HeroPage() {
         </div>
 
         <div className="flex justify-center items-center">
-          <img src={dashboard} className="h-max md:w-2/3  dashboard" />
+          <img src={dashboard} className="h-max md:w-2/3  dashboard" alt="dashboard" />
         </div>
       </div>
     </section>
