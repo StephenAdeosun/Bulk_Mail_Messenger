@@ -99,18 +99,35 @@ li a:hover {
   color: var(--neutral-color);
 }
 
+.testimonial-div {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .profile-div {
   background-color: var(--dark-color2);
-  box-shadow: 0 10px 15px -3px var(--gray-color);
-  /* background: var(--primary-color); */
+  box-shadow: 0 4px 6px -1px var(--gray-color);
 }
 
 .profile-h3 {
   color: var(--neutral-color);
 }
 
+.arrow-img {
+  scale: -1;
+}
+
 @media screen and (max-width: 769px) {
   section {
     width: 100%;
+  }
+
+  .testimonial-div {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .profile-div {
+    width: 96%;
   }
 }
