@@ -10,7 +10,7 @@ return(
     <Box textAlign={'center'} padding={'10'} color={'white'}>
         <Text fontSize={'4xl'} fontWeight={'3xl'} marginBottom={'6'} color={'white'}>Ready to try our free trial?</Text>
         <Text maxWidth={'500px'} margin={'auto'} lineHeight={'6'} color={'white'}>Engage your audience on a personal level by customizing messages with our friendly Bulk Messager.</Text>
-        <Button bgColor={'white'} color={'#4335E2'} marginTop={'8'}  _hover={{bgColor:'white'}}>Try 3days Free Trial</Button>
+        <Button bgColor={'white'} color={'#4335E2'} marginTop={ '8'}  _hover={{bgColor:'white'}}>Try 3days Free Trial</Button>
     </Box>
 </Box>
 <Box bgColor={'#00112D'} color={'white'} py={'10'}>
