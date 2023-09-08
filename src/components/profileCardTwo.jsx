@@ -3,7 +3,7 @@ import profile1 from "../images/Ellipse 4 (1).png";
 
 function ProfileCardTwo() {
   return (
-    <div className="profile-div md:p-6 px-4 py-6  md:px-0 md:py-0  rounded-2xl inline-block ">
+    <div className="profile-div md:p-6 p-4 rounded-2xl inline-block ">
       <h3 className="profile-h3 text-left font-medium mb-7">
         We needed a solution to manage our large<br></br> scale email
         communication and Quapaay<br></br> meet our expectations.
