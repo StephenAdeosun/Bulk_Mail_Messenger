@@ -48,7 +48,7 @@ const Nav = () => {
 
           <div className="text-left">
             <button className=" sign-in px-8 py-2.5 rounded-md ">
-              Sign In
+              <a href="https://quaapay-login.netlify.app/">Sign In</a>
             </button>
           </div>
         </nav>
