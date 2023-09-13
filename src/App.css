@@ -130,4 +130,47 @@ li a:hover {
   .profile-div {
     width: 96%;
   }
+
+  .pricing-plan{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* GET STARTED AND PRICING */
+
+.pri005{
+  color: var(--pri005);
+}
+
+.pri100 {
+  color: var(--pri100);
+}
+
+.bg-pri100{
+  background-color: var(--pri100);
+}
+
+.white{
+  color: var(--neutral-color);
+}
+
+.laptop {
+  width: 142.981px;
+  height: 142.981px;
+}
+
+.pricing-plan{
+  border: 1px solid var(--pri001);
+}
+
+.pricing-plan > div h2{
+  font-size: 7px;
+}
+@media screen and (min-width: 768px) {
+  .laptop {
+    width: 486px;
+    height: 625px;
+  }
 }
