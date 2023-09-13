@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 const Nav = () => {
@@ -48,7 +49,7 @@ const Nav = () => {
 
           <div className="text-left">
             <button className=" sign-in px-8 py-2.5 rounded-md ">
-              <a href="https://quaapay-login.netlify.app/">Sign In</a>
+              <Link to="../Pages/login">Sign In</Link>
             </button>
           </div>
         </nav>
