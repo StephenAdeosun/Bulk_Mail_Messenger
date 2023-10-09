@@ -1,22 +1,18 @@
-import React from "react";
-import HeroPage from "./Pages/heroPage";
-import Section2 from "./Pages/section2";
-import GetStarted from "./Pages/getStarted";
-import Pricing from "./Pages/pricing";
-import Footer from "./Pages/footer";
-import "./App.css";
-import TestimonialPage from "./Pages/testimonialPage";
+import { ReactDOM } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FullPage from "./fullPage";
+import Login from "./Pages/login";
+import SignUp from "./Pages/signUp";
 
 function App() {
   return (
-    <div className="App">
-      <HeroPage />
-      <Section2 />
-      <GetStarted />
-      <Pricing />
-      <TestimonialPage />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<FullPage />} />
+        <Route path="Pages/login" element={<Login />} />
+        <Route path="Pages/signUp" element={<SignUp />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
