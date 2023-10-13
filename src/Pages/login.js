@@ -5,9 +5,9 @@ import "../form.css";
 
 function login() {
   return (
-    <main className="flex w-screen h-screen bg-white overflow-hidden mx-11 login">
+    <main className="flex w-screen h-screen bg-white overflow-hidden px-6 login">
       <IntroductoryPage />
-      <div className="w-1/2 h-full flex justify-center flex-col">
+      <div className="w-full sm:w-1/2 h-full flex justify-center flex-col">
         <div className="lg:w-80 lg:ml-12 md:w-72 md:h-auto md:ml-7">
           <div className="text-left">
             <h2 className="text-black font-bold leading-[40px] text-3xl">
