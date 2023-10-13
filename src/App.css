@@ -169,8 +169,32 @@ li a:hover {
   font-size: 7px;
 }
 @media screen and (min-width: 768px) {
+  .intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .signup,
+  .login{
+    margin: 0;
+  }
+
   .laptop {
     width: 486px;
     height: 625px;
   }
+
+  nav{
+    justify-content: space-evenly !important;
+  }
+
+  .navbar{
+    flex-direction: row !important;
+  }
+  
+  /* .header{
+    justify-content: space-around !important;
+  } */
 }

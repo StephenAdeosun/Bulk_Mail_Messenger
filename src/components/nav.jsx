@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import "../App.css"
 
 const Nav = () => {
   let Links = [
@@ -12,8 +13,8 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full">
-      <header className="p-7 md:flex items-center justify-between md:justify-around">
+    <div className="w-full flex items-center justify-center">
+      <header className="w-full header p-7 md:flex items-center justify-center">
         <div className="text-left">
           <button className="border-black border-2 text-lg px-3 py-1 font-semibold cursor-pointer items-center">
             Logo
@@ -29,7 +30,7 @@ const Nav = () => {
 
         <nav
           className={`
-           md:flex md:justify-around md:w-2/3 md:bg-white bg-white bg-opacity-100 md:bg-opacity-0 md:items-center md:pb-0 pb-20 absolute  md:static left-0 w-full md-pl-0 pl-9 transition-all  duration-200 ease-in-out md:z-auto z-[-1] 
+           md:flex md:w-2/3 md:bg-white bg-white bg-opacity-100 md:bg-opacity-0 md:items-center md:pb-0 pb-20 absolute md:static left-0 w-full md-pl-0 pl-9 transition-all  duration-200 ease-in-out md:z-auto z-[-1] 
            ${
              open
                ? "top-20 opacity-100"
@@ -38,7 +39,7 @@ const Nav = () => {
         `}
         >
           <ul
-            className={`flex my-7 md:my-0 md:flex-row flex-col md:gap-6 font-semibold text-lg text-left`}
+            className={`flex my-7 md:my-0 md:flex-row flex-col md:gap-6 font-semibold text-lg text-left navbar`}
           >
             {Links.map((link) => (
               <li key={link.name}>
