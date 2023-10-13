@@ -5,7 +5,7 @@ import "../form.css";
 
 function login() {
   return (
-    <main className="flex w-screen h-screen bg-white overflow-hidden">
+    <main className="flex w-screen h-screen bg-white overflow-hidden mx-11 login">
       <IntroductoryPage />
       <div className="w-1/2 h-full flex justify-center flex-col">
         <div className="lg:w-80 lg:ml-12 md:w-72 md:h-auto md:ml-7">
@@ -19,7 +19,7 @@ function login() {
             </p>
           </div>
           <form
-            method="post"
+            // method="post"
             className="login-form flex flex-col items-start text-left mt-8 w-full"
           >
             <label htmlFor="email" className="w-full mb-3">

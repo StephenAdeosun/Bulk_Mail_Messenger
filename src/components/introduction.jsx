@@ -4,7 +4,7 @@ import heroImage from "../assets/hero.png"
 
 function introductoryPage() {
   return (
-    <div className="bg-quaapay-indigo w-1/2 h-full flex items-center justify-center flex-col">
+    <div className="bg-quaapay-indigo w-1/2 h-full intro hidden">
       <img src={heroImage} alt="hero" className="scale-[.65]" />
       <div>
         <div className="text-left w-96 mx-0 my-auto text-white">
