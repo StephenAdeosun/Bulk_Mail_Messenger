@@ -1,9 +1,26 @@
 import { Link } from "react-router-dom";
 import IntroductoryPage from "../components/introduction";
 import googleLogo from "../assets/google-icon.png";
+import useFormValidation from "../hooks/useFormValidation";
 import "../form.css";
 
-function login() {
+function Login() {
+  const { formData, errors, handleChange, validateForm } = useFormValidation(
+    { email: "", password: "" },
+    {
+      email: { required: true },
+      password: { required: true },
+    }
+  );
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      alert("Login Form submitted!");
+    }
+  };
+
   return (
     <main className="flex w-screen h-screen bg-white overflow-hidden px-6 login">
       <IntroductoryPage />
@@ -19,8 +36,8 @@ function login() {
             </p>
           </div>
           <form
-            // method="post"
             className="login-form flex flex-col items-start text-left mt-8 w-full"
+            onSubmit={handleSubmit}
           >
             <label htmlFor="email" className="w-full mb-3">
               Email
@@ -29,10 +46,18 @@ function login() {
                 type="email"
                 name="email"
                 id="email"
-                className="w-full bg-zinc-100 rounded mt-1 px-3 py-2"
+                className={`w-full bg-zinc-100 rounded mt-1 px-3 py-2 ${
+                  errors.email && "border-red-500"
+                }`}
                 placeholder="Enter your email address"
+                value={formData.email}
+                onChange={handleChange}
               />
-              <div id="error" className="text-xs font-medium text-red-800" />
+              {errors.email && (
+                <div className="text-xs font-medium text-red-500">
+                  {errors.email}
+                </div>
+              )}
             </label>
             <label htmlFor="password" className="w-full mb-5">
               Password
@@ -41,10 +66,18 @@ function login() {
                 type="password"
                 name="password"
                 id="password"
-                className="w-full bg-zinc-100 rounded mt-1 px-3 py-2"
+                className={`w-full bg-zinc-100 rounded mt-1 px-3 py-2 ${
+                  errors.password && "border-red-500"
+                }`}
                 placeholder="Enter Password"
+                value={formData.password}
+                onChange={handleChange}
               />
-              <div id="error" className="text-xs font-medium text-red-800" />
+              {errors.password && (
+                <div className="text-xs font-medium text-red-500">
+                  {errors.password}
+                </div>
+              )}
             </label>
             <div className="w-full flex justify-between">
               <label htmlFor="remember" className="text-sm">
@@ -93,4 +126,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;
