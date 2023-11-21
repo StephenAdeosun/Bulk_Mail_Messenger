@@ -22,7 +22,7 @@ function Login() {
   };
 
   return (
-    <main className="flex w-screen h-screen bg-white overflow-hidden px-6 login">
+    <main className="flex w-screen h-screen bg-white overflow-hidden px-6 lg:px-0 login">
       <IntroductoryPage />
       <div className="w-full sm:w-1/2 h-full flex justify-center flex-col">
         <div className="lg:w-80 lg:ml-12 md:w-72 md:h-auto md:ml-7">
@@ -114,7 +114,7 @@ function Login() {
           </form>
           <div className="w-full mt-5 flex items-center justify-center">
             <p className="text-sm">
-              Don't have an account?
+              Don't have an account?{" "}
               <Link to="/Pages/signUp" className="text-quaapay-indigo">
                 Sign Up
               </Link>
